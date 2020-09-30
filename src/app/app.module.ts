@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatTabsModule} from '@angular/material/tabs';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -10,6 +13,7 @@ import { BenefitsComponent } from './sections/benefits/benefits.component';
 import { ClientsComponent } from './sections/clients/clients.component';
 import { DemoComponent } from './sections/demo/demo.component';
 import { FooterComponent } from './sections/footer/footer.component';
+import { TabContentComponent } from './sections/what-we-do/tab-content/tab-content.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +27,13 @@ import { FooterComponent } from './sections/footer/footer.component';
     ClientsComponent,
     DemoComponent,
     FooterComponent,
+    TabContentComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatTabsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
