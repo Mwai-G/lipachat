@@ -1,1 +1,22 @@
-<p>what-we-do works!</p>
+
+<div class="about-us-section">
+
+  <div class="heading">
+    <h3>We Provide Whatsapp Business Solutions</h3>
+  <p>Whatsapp is the number one messaging app in the world with over 1.5 bn users across the globe and over 190 million users in Africa and growing. </p>
+  </div>
+
+  <div class="body">
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="SALES"> 
+        <app-tab-content [tabContent]="tabContent[0]"></app-tab-content>  
+      </mat-tab>
+      <mat-tab label="MARKETING">
+        <app-tab-content [tabContent]="tabContent[1]"></app-tab-content>  
+      </mat-tab>
+      <mat-tab label="CUSTOMER CARE">
+        <app-tab-content [tabContent]="tabContent[2]"></app-tab-content>  
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

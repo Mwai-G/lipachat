@@ -1,0 +1,26 @@
+
+.card {
+  width: 500px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px 15px;
+  margin-bottom: 30px;
+
+  .header {
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  .card-body {
+    p {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+  
+}

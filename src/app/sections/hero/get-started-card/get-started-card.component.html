@@ -1,1 +1,16 @@
-<p>get-started-card works!</p>
+<div class="card">
+
+  <div class="header d-flex justify-content-center align-items-center">
+    <img src="{{ details?.imageUrl }}" alt="">
+    <h4> {{ details?.heading }}  </h4>
+  </div>
+
+  <div class="card-body">
+    <p> {{ details?.text }} </p>
+
+    <div>
+      <a href="{{ details?.link }}" class="btn_1">get started</a>
+    </div>
+
+  </div>
+</div>

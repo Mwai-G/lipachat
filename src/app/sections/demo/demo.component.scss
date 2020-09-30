@@ -23,6 +23,7 @@
 .swiper-container {
   width: 100%;
   height: 100%;
+  
 }
 
 .swiper-slide {
@@ -31,12 +32,12 @@
   // background: #fff;
   display: flex;
   justify-content: center;
+  padding-bottom: 70px !important;
 }
 
 .video_wrapper {
   width: 80%;
-  height: 343px;
-  margin-bottom: 30px;
+  height: 373px;
 }
 
 iframe {
@@ -81,4 +82,8 @@ p{
     @media #{$medium_device}{
         margin-bottom: 30px;
     }
+}
+
+.section_padding {
+    padding: 70px 0px;
 }
