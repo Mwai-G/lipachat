@@ -1,4 +1,5 @@
 @import "../../../assets/sass/variables";
+@import "../../../assets/sass/variables";
 
 .benefits-section {
   background-color: $bg_blue;
@@ -15,9 +16,9 @@
   }
 
   .pattern-white {
-    height: 50px;
+    height: 75px;
     width: 100%;
-    background-image: url("../../../assets/images/Vector.svg");
+    background-image: url("../../../assets/images/pt-white.svg");
     background-repeat: repeat-x;
     background-position: top;
   }
