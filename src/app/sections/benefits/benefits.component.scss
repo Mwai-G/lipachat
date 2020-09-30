@@ -1,0 +1,29 @@
+@import "../../../assets/sass/variables";
+
+.benefits-section {
+  background-color: $bg_blue;
+  text-align: center;
+  margin-top: 0;
+  overflow-x: hidden;
+
+  h3 {
+    margin: 20px auto 30px;
+    color: white;
+  }
+
+  body {
+    width: 90%;
+    @media screen and (max-width: 768px) {
+      margin: 100%;
+    }
+  }
+
+  .pattern-white {
+    height: 50px;
+    width: 100%;
+    background-image: url("../../../assets/images/Vector.svg");
+    background-repeat: repeat-x;
+    background-position: top;
+  }
+
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IGetStartedCard } from '../../interfaces/get-started-card';
+import { IGetStartedCard } from '../../interfaces/get-started-card.interface';
 
 @Component({
   selector: 'app-hero',
