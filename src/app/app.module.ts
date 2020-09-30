@@ -14,6 +14,7 @@ import { ClientsComponent } from './sections/clients/clients.component';
 import { DemoComponent } from './sections/demo/demo.component';
 import { FooterComponent } from './sections/footer/footer.component';
 import { TabContentComponent } from './sections/what-we-do/tab-content/tab-content.component';
+import { BenefitCardComponent } from './sections/benefits/benefit-card/benefit-card.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { TabContentComponent } from './sections/what-we-do/tab-content/tab-conte
     DemoComponent,
     FooterComponent,
     TabContentComponent,
+    BenefitCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,14 @@
-<p>benefits works!</p>
+<div class="benefits-section">
+  <div class="pattern-white"></div>
+
+  <h2>BENEFITS OF LIPACHAT</h2>
+
+  <div class="body mb-5 pb-2 d-flex inline justify-content-around">
+    <div *ngFor="let benefit of benefits">
+      <app-benefit-card [benefit]="benefit"></app-benefit-card>
+    </div>
+  </div>
+  <!-- <app-benefit-card [benefit]="benefits[0]"></app-benefit-card> -->
+
+  <div class="pattern-white"></div>
+</div>

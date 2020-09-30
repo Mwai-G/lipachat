@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ITabContent } from '../../../interfaces/tab-content';
+import { ITabContent } from 'src/app/interfaces/tab-content.interface';
 
 @Component({
   selector: 'app-tab-content',
