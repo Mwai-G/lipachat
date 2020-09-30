@@ -1,0 +1,26 @@
+// Font variables
+$font_stack_1: 'Nunito', sans-serif;
+$white_color: #fff;
+$black_color: #000;
+$heading_color: #1f1f1f;
+$p_color: #222222;
+
+// Body color variables
+$bg_white: #ffffff;
+$bg_grey: #f4f6f7;
+$menu_color: #fff;
+$bg_light_blue: #e8f5fc;
+$bg_black_overlay: rgba(0, 0, 0, 0.8);
+$bg_pink: #EB1947;
+
+
+// Responsive class variables
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$large_mobile: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$tab:'(max-width: 991px)';
+$small_mobile:'(max-width: 576px)';
+$xs_mobile:'(max-width: 420px)';
+$sm_mobile:'only screen and (min-width: 421px) and (max-width: 575px)';
+$big_screen:'only screen and (min-width: 1200px) and (max-width: 1440px)';
+$extra_big_screen: 'only screen and (min-width: 1200px) and (max-width: 3640px)';
