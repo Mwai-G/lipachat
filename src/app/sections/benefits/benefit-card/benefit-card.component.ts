@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IBenefit } from '../../../interfaces/benefit.interface';
 
 @Component({
   selector: 'app-benefit-card',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BenefitCardComponent implements OnInit {
 
+  @Input() benefit: IBenefit;
+
   constructor() { }
 
   ngOnInit(): void {
+    debugger
   }
 
 }
