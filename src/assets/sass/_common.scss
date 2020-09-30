@@ -70,10 +70,16 @@ body {
 
 a {
   text-decoration: none;
+  color: $p_color;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  // text-transform: uppercase;
 
   &:hover {
     outline: none;
     text-decoration: none;
+    color: $bg_pink;
   }
 }
 
@@ -140,4 +146,16 @@ a:focus, .button:focus, button:focus, .btn:focus {
     text-decoration: none;
     outline: none;
     box-shadow: none;
+}
+
+.bottom-border {
+  border-bottom: 2px solid $bg_pink;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
