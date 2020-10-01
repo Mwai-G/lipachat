@@ -77,43 +77,172 @@
 }
 
 .bg-pattern {
-    width: 100%;
-    height: 300px;
-    background-image: url('../../../assets/images/389.jpg'),;
-    background-size: contain;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    @media screen and (max-width: 768px) {
-       width: 90%;
-       margin: auto;
-    }
+  width: 100%;
+  height: 300px;
+  background-image: url('../../../assets/images/389.jpg'), ;
+  background-size: contain;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    margin: auto;
+  }
 }
+
 .bg-gradient {
-    width: 100%;
-    height: 100%;
-    @extend%custom_bg_2;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  @extend%custom_bg_2;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .bg-gradient h2 {
-    color: $white_color;
-    padding-top: 50px;
+  color: $white_color;
+  padding-top: 50px;
 }
 
 .bg-gradient h3 {
-    color: $white_color;
-    font-weight: 800 !important;
+  color: $white_color;
+  font-weight: 800 !important;
 }
 
 .btn_container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 
+
+
+.footer-area {
+  position: relative;
+  z-index: 1;
+}
+
+.single-footer-widget {
+  position: relative;
+  z-index: 1;
+
+  .widget-title {
+      color: $p_color;
+      margin-bottom: 20px;
+      display: block;
+      font-weight: 600;
+  }
+
+  p {
+      @media #{$big_screen} {
+          font-size: 14px;
+      }
+  }
+
+  .footer-social-info {
+      a {
+          display: inline-block;
+          color: $white_color;
+          margin-right: 5px;
+          // background-color: $primary;
+          width: 40px;
+          height: 40px;
+          border-radius: 20px;
+          text-align: center;
+          line-height: 40px;
+
+          &.facebook {
+              background-color: #4c60ac;
+          }
+
+          &.twitter {
+              background-color: #00bae3;
+          }
+
+          &.whatsapp {
+              background-color: #25D366;
+          }
+
+          &.instagram {
+              background-color: #0085d7;
+          }
+
+          &.youtube {
+              background-color: #e20000;
+          }
+
+          @media #{$big_screen} {
+              width: 30px;
+              height: 30px;
+              line-height: 30px;
+              font-size: 14px;
+          }
+      }
+  }
+
+  .our-link {
+      position: relative;
+      z-index: 1;
+
+      li {
+          a {
+              position: relative;
+              z-index: 1;
+              font-size: 16px;
+              color: $p_color;
+              margin-bottom: 15px;
+              display: block;
+              font-weight: normal;
+
+              @media #{$big_screen} {
+                  font-size: 14px;
+              }
+
+              &::after {
+                transition-duration: 500ms;;
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  width: 0;
+                  height: 3px;
+                  background-color: $bg_pink;
+                  content: '';
+                  transform: translateY(-50%);;
+              }
+
+              &:focus,
+              &:hover {
+                  color: $bg_pink;
+                  padding-left: 25px;
+
+                  &::after {
+                      width: 15px;
+                  }
+              }
+          }
+
+          &:last-child {
+              a {
+                  margin-bottom: 0;
+              }
+          }
+      }
+  }
+
+  .footer-content {
+      position: relative;
+      z-index: 1;
+
+      h3 {
+          color: $bg_pink;
+
+          @media #{$large_mobile} {
+              font-size: 20px;
+          }
+      }
+  }
+}

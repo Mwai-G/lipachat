@@ -3,23 +3,115 @@
 .navbar {
   background-color: transparent !important;
   height: 80px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   padding-top: 20px;
+  transition: all .4s ease-in-out;
 
   img {
     height: 60px;
     width: auto;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 765px) {
       height: 40px;
+    }
+  }
+
+}
+
+
+
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  height: 15px;
+  width: 15px;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-nav {
+
+  .nav-item {
+    .nav-link {
+      padding: 0 18px !important;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      &:hover {
+        color: $bg_pink !important;
+      }
+    }
+  }
+
+  // @media only screen and (max-width: 1200px) and (min-width: 992px) {
+  //   .nav-item {
+  //     .nav-link {
+  //       padding: 5px !important;
+  //     }
+  //   }
+  // }
+}
+
+
+.navbar-collapse {
+  @media screen and (max-width: 500px) {
+    background-color: #ffffff;
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: #222222 !important;
+          padding: 5px 15px !important;
+
+          &:hover {
+            color: $bg_pink !important;
+          }
+        }
+      }
     }
   }
 }
 
-.nav-link {
-  color: white;
-  &:hover {
-    color: $bg_pink !important;
+.white-nav {
+  background: #ffffff !important;
+  padding: 0 75px;
+  width: 100vw;
+  box-shadow: 0 8px 7px -8px #999;
+  z-index: 2;
+  transition: all .4s ease-in-out;
+  height: 75px;
+
+  @media screen and (max-width: 765px) {
+    padding: 0 20px;
+  }
+
+  .nav-item {
+    .nav-link {
+      color: #222222 !important;
+    }
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    height: 15px;
+    width: 15px;
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.5);
   }
 }
+
+// .nav-item {
+//   .nav-link {
+//     color: white;
+
+//     &:hover {
+//       color: $bg_pink !important;
+//     }
+//   }
+// }

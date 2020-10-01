@@ -15,6 +15,7 @@ import { DemoComponent } from './sections/demo/demo.component';
 import { FooterComponent } from './sections/footer/footer.component';
 import { TabContentComponent } from './sections/what-we-do/tab-content/tab-content.component';
 import { BenefitCardComponent } from './sections/benefits/benefit-card/benefit-card.component';
+import { NgxNavbarModule } from 'ngx-bootstrap-navbar';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { BenefitCardComponent } from './sections/benefits/benefit-card/benefit-c
     BrowserModule,
     BrowserAnimationsModule,
     MatTabsModule,
+    NgxNavbarModule
 
   ],
   providers: [],

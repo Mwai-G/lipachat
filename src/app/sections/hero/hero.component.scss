@@ -1,7 +1,7 @@
 @import "../../../assets/sass/variables";
 
 .hero-section {
-  margin: -80px auto 0;  //compensates for navbar
+  // margin: -80px auto 0;  //compensates for navbar
   height: 100vh;
   @media screen and (max-width: 768px) {
     height: auto;
