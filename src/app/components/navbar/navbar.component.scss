@@ -1,5 +1,22 @@
+@import '../../../styles.scss';
 
 .navbar {
   background-color: transparent !important;
   height: 80px;
+
+  img {
+    height: 60px;
+    width: auto;
+
+    @media screen and (max-width: 768px) {
+      height: 40px;
+    }
+  }
+}
+
+.nav-link {
+  color: white;
+  &:hover {
+    color: $bg_pink !important;
+  }
 }

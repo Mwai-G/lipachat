@@ -18,15 +18,8 @@
   -o-border-radius: 7px;
 
   &:hover {
-      color: $bg_pink;
-      background-color: $white_color;
-      border: 1px solid $bg_pink;
       text-decoration: none;
-      border-radius: 0;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      -o-border-radius: 0;
+
 }
 
   @media #{$small_mobile} {

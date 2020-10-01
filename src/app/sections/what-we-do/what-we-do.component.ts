@@ -19,13 +19,13 @@ export class WhatWeDoComponent implements OnInit {
       headline: 'Marketing Support',
       lineOne: 'Take advantage of pro-active messaging chatbots in the #1 messaging channel using our intuitive chatbots.',
       lineTwo: 'Improve customer engagements and get more leads.',
-      image: 'assets/images/about_img_2.png'
+      image: 'assets/images/about_img_3.png'
     },
     {
       headline: 'Customer care services  through Whatsapp',
       lineOne: 'Improve your customer care services by always availing support where your customers are.',
       lineTwo: 'Show your customers that you care.',
-      image: 'assets/images/about_img_3.png'
+      image: 'assets/images/about_img_2.png'
     }
   ];
 

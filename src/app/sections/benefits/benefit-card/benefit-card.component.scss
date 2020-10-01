@@ -2,10 +2,15 @@
 .card {
   background-color: white;
   padding: 20px 10px;
-  width: 250px;
+  width: 245px;
   border-radius: 10px;
   height: 350px;
-
+  margin-bottom: 20px;
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
   img {
     width: 120px;
     height: auto;
