@@ -19,7 +19,8 @@
 
   &:hover {
       text-decoration: none;
-
+      background-color: #f15f7f;
+      color: $white_color;
 }
 
   @media #{$small_mobile} {
