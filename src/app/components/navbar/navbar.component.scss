@@ -1,5 +1,18 @@
+@import '../../../styles.scss';
 
 .navbar {
   background-color: transparent !important;
   height: 80px;
+
+  img {
+    height: 60px;
+    width: auto;
+  }
+}
+
+.nav-link {
+  color: white;
+  &:hover {
+    color: $bg_pink !important;
+  }
 }
