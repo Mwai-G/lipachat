@@ -24,7 +24,7 @@ export class ClientsComponent implements OnInit {
       slidesPerView: 1,
       breakpoints: {
         768: {
-          slidesPerView: 3,
+          slidesPerView: 2,
         }
       }
     })
