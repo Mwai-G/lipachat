@@ -11,20 +11,18 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
-  @HostListener('window:scroll', ['$event'])
-  
-  onWindowScroll(e) {
-    // alert('You scrolled')
-    let element = document.querySelector('.navbar-light');
-    if (window.pageYOffset > 100) {
-      element.classList.add('white-nav');
-    } else {
-      element.classList.remove('white-nav')
-    }
-
-  }
-
   ngOnInit(): void {
   }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e): void {
+    const el = document.querySelector('.navbar-light');
+    if (window.pageYOffset > 100) {
+      el.classList.add('white-nav');
+    } else {
+      el.classList.remove('white-nav')
+    }
+  }
+
 
 }

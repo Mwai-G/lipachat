@@ -2,7 +2,7 @@
 
 .hero-section {
   // margin: -80px auto 0;  //compensates for navbar
-  height: 100vh;
+  height: auto;
   @media screen and (max-width: 768px) {
     height: auto;
   }
@@ -29,12 +29,22 @@
     p {
       color: white;
     }
+
+
+
+    @media screen and (min-width: 1300px) {
+      height: 80vh;
+    }
+
+    @media screen and (min-width: 1400px) {
+      height: 65vh;
+    }
   }
 }
 
 .get-starteds {
-  width: 85%;
-  margin: -150px auto 0;
+  width: 75%;
+  margin: -170px auto 0;
 
   @media screen and (max-width: 768px) {
     width: 100%;

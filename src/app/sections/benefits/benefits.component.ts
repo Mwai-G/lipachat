@@ -12,23 +12,24 @@ export class BenefitsComponent implements OnInit {
     {
       image: 'assets/images/save-icon.png',
       name: 'Save On Cost',
-      description: 'Quickly handle customer enquiries and get feedback faster at a cheaper cost.'
+      description: 'Using chatbots to is almost 10x cheaper compared to call centers and apps.'
     },
     {
       image: 'assets/images/grow-icon.png',
       name: 'Growth',
-      description: 'Easily engage with a broader customer audience from a single platform and grow your business.'
+      description: 'Customers rarely ignore whatsapp messages making it effective for marketing.'
+    },
+    {
+      image: 'assets/images/intergrate-icon.png',
+      name: 'Automated payments',
+      description: 'Integrate to MPESA and bank for payments of goods and services.'
     },
     {
       image: 'assets/images/c-support.png',
       name: 'Better Customer Service',
-      description: 'Provide your customers with easy payments methods on whatsapp.'
+      description: 'Happier customers 😃.'
     },
-    {
-      image: 'assets/images/intergrate-icon.png',
-      name: 'Integration',
-      description: 'Easy Intergration  to MPESA, banks and internal erp systems.'
-    }
+
   ];
 
   constructor() { }

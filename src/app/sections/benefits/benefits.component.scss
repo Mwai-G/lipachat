@@ -12,8 +12,8 @@
     color: white;
   }
 
-  body {
-    width: 90%;
+  .cards {
+    margin: auto 40px;
     @media screen and (max-width: 768px) {
       margin: 100%;
     }
