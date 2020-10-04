@@ -2,29 +2,21 @@
 @import "../../../assets/sass/variables";
 
 .benefits-section {
-  background-color: $bg_blue;
+  background-color: #F6F8FE;
   text-align: center;
   margin-top: 0;
   overflow-x: hidden;
+  padding-bottom: 40px;
 
-  h3 {
-    margin: 20px auto 30px;
-    color: white;
+  .title {
+    margin: 10px auto 40px;
   }
 
   .cards {
-    margin: auto 40px;
+    width: 85%;
+    margin: auto;
     @media screen and (max-width: 768px) {
-      margin: 100%;
+      width: 100%;
     }
   }
-
-  .pattern-white {
-    height: 50px;
-    width: 100%;
-    background-image: url("../../../assets/images/pt-white.svg");
-    background-repeat: repeat-x;
-    background-position: top;
-  }
-
 }

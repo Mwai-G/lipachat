@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 import {IBenefit } from 'src/app/interfaces/benefit.interface';
 
 @Component({
@@ -31,6 +32,31 @@ export class BenefitsComponent implements OnInit {
     },
 
   ];
+
+
+  customOptions: OwlOptions = {
+    loop: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
+    navSpeed: 700,
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+    nav: false
+  };
 
   constructor() { }
 

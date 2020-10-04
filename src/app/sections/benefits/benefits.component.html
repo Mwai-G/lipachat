@@ -1,13 +1,24 @@
 <div class="benefits-section">
-  <div class="pattern-white"></div>
+  <div class="triangles-pattern"></div>
 
-  <h2 class="pt-4 pb-4 text-white">Benefits of Lipachat</h2>
+  <h2 class="title">Benefits of Lipachat</h2>
 
-  <div class="cards mb-5 pb-2 row d-flex justify-content-center">
-      <div class="col-lg-3 col-md-4 col-sm-12 d-flex justify-content-center" *ngFor="let benefit of benefits">
+  <!-- <div class="cards  mb-2 row d-flex justify-content-center">
+      <div class="col-lg-3 col-md-4 col-sm-12" *ngFor="let benefit of benefits">
         <app-benefit-card [benefit]="benefit"></app-benefit-card>
       </div>
-  </div>
+  </div> -->
 
-  <div class="pattern-white"></div>
+
+
+  <owl-carousel-o [options]="customOptions" class="d-flex justify-content-between cards">
+    <ng-container *ngFor="let benefit of benefits">
+
+      <ng-template carouselSlide>
+        <app-benefit-card [benefit]="benefit"></app-benefit-card>
+      </ng-template>
+
+    </ng-container>
+  </owl-carousel-o>
+
 </div>

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatTabsModule} from '@angular/material/tabs';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -17,10 +18,10 @@ import { TabContentComponent } from './sections/what-we-do/tab-content/tab-conte
 import { BenefitCardComponent } from './sections/benefits/benefit-card/benefit-card.component';
 import { NgxNavbarModule } from 'ngx-bootstrap-navbar';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-
     NavbarComponent,
     GetStartedCardComponent,
     HeroComponent,
@@ -36,10 +37,14 @@ import { NgxNavbarModule } from 'ngx-bootstrap-navbar';
     BrowserModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    NgxNavbarModule
+    NgxNavbarModule,
+
+    CarouselModule,
 
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+
+  ],
+   bootstrap: [AppComponent]
 })
 export class AppModule { }

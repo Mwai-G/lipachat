@@ -1,11 +1,10 @@
 
 .card {
-  background-color: white;
-  padding: 20px 10px;
-  width: 275px;
+  background-color: #F6F8FE;
+  max-width: 220px;
   border-radius: 10px;
-  height: 350px;
-  margin-bottom: 20px;
+  height: 300px;
+  border: none;
   @media screen and (max-width: 768px) {
     width: 80%;
     margin: auto;
@@ -25,5 +24,6 @@
 
     .text {
       color: rgba(51, 51, 51, 0.925);
+      font-size: 15px;
     }
 }
