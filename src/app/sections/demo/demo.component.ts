@@ -11,10 +11,19 @@ export class DemoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    var swiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+    var swiper = new Swiper('.swiper-demo', {
+      slidesPerView: 1,
+      // autoplay: true,
+      loop: true,
+      speed: 800,
+      spacebetween: 10,
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
     });
   }

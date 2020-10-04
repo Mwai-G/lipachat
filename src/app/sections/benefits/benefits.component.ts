@@ -11,12 +11,12 @@ export class BenefitsComponent implements OnInit {
 
   benefits: IBenefit[] = [
     {
-      image: 'assets/images/save-icon.png',
+      image: 'assets/images/icons8-money-box-64.png',
       name: 'Save On Cost',
       description: 'Using chatbots to is almost 10x cheaper compared to call centers and apps.'
     },
     {
-      image: 'assets/images/grow-icon.png',
+      image: 'assets/images/icons8-account-64.png',
       name: 'Growth',
       description: 'Customers rarely ignore whatsapp messages making it effective for marketing.'
     },
@@ -26,11 +26,10 @@ export class BenefitsComponent implements OnInit {
       description: 'Integrate to MPESA and bank for payments of goods and services.'
     },
     {
-      image: 'assets/images/c-support.png',
+      image: 'assets/images/icons8-online-support-64.png',
       name: 'Better Customer Service',
       description: 'Happier customers 😃.'
     },
-
   ];
 
 

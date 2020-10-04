@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
 .demo_part {
-  background: $bg_light_blue;  
+  background: $bg_light_blue;
 }
 
 .pattern_top {
@@ -25,72 +25,188 @@
 }
 
 .swiper-container {
-  width: 100%;
+  width: 50%;
   height: 100%;
-  
+  // border: 1px solid black;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  // background: #fff;
   display: flex;
   justify-content: center;
   padding-bottom: 90px !important;
+  align-items: center;
 }
 
-.video_wrapper {
-  width: 80%;
-  height: 373px;
-  p{
-    color: $p_color;
+// .video_wrapper {
+//   width: 80%;
+//   height: 373px;
+
+//   p {
+//     color: $p_color;
+//   }
+// }
+
+// iframe {
+//   border-radius: 10px;
+//   -webkit-border-radius: 10px;
+//   -moz-border-radius: 10px;
+//   -ms-border-radius: 10px;
+//   -o-border-radius: 10px;
+// }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $bg_pink;
+  top: 40% !important;
+}
+
+h2 {
+  margin-bottom: 30px;
+
+  @media #{$tab} {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  @media #{$small_mobile} {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  @media #{$medium_device} {
+    font-size: 35px;
+    margin-bottom: 15px;
   }
 }
 
-iframe {
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
+p {
+  color: $white_color;
+  font-size: 18px;
+  margin-bottom: 50px;
 
-.swiper-button-next, .swiper-button-prev {
-    color: $bg_pink;
-    top: 40% !important;
-}
+  @media #{$tab} {
+    margin-bottom: 20px;
+  }
 
-h2{
+  @media #{$small_mobile} {
+    margin-bottom: 15px;
+  }
+
+  @media #{$medium_device} {
     margin-bottom: 30px;
-    
-    @media #{$tab}{
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-    @media #{$small_mobile}{
-        font-size: 25px;
-        margin-bottom: 15px;
-    }
-    @media #{$medium_device}{
-        font-size: 35px;
-        margin-bottom: 15px;
-    }
-}
-p{
-    color: $white_color;
-    font-size: 18px;
-    margin-bottom: 50px;
-    @media #{$tab}{
-        margin-bottom: 20px;
-    }
-    @media #{$small_mobile}{
-        margin-bottom: 15px;
-    }
-    @media #{$medium_device}{
-        margin-bottom: 30px;
-    }
+  }
 }
 
 .section_padding {
-    padding: 70px 0px;
+  padding: 70px 0px;
+}
+
+// .demo-container {
+//   height: 100vh;
+// }
+
+.section-area {
+  position: relative;
+}
+
+.screen-area img.screen-img {
+  position: absolute;
+  left: 50%;
+  // bottom: 152px;
+  width: 506px;
+  height: 546px;
+  // z-index: 111;
+  transform: translateX(-50%);
+}
+
+.swiper-container {
+  width: 506px;
+  height: 576px;
+  // border: 5px solid black;
+  position: relative;
+}
+
+.swiper-wrapper {
+  position: absolute;
+  // width: 256px !important;
+  height: 466px !important;
+  // border: 3px solid red;
+  top: 60px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px !important;
+  align-items: center;
+  // border: 3px solid green;
+  
+}
+
+iframe {
+  margin-left: -8px;
+  //border: 1px solid greenyellow;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  
+}
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.demo-text {
+  padding-top: 150px;
+  z-index: 10;
+  color: red;
+}
+
+@media screen and (max-width: 360px) {
+  iframe {
+    width: 150px !important;
+    margin-left: -5px;
+  }
+  .swiper-container {
+    width: 80%;
+  }
+  .screen-area img.screen-img {
+    width: 100%;
+  }
+}
+
+@media screen 
+and (min-width: 380px)
+and (max-width: 479px)  {
+  iframe {
+    width: 170px !important;
+    margin-left: -5px;
+  }
+  .swiper-container {
+    width: 80%;
+  }
+  .screen-area img.screen-img {
+    width: 100%;
+  }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    iframe {
+      width: 165px !important;
+      margin-left: -3px;
+    }
+    .swiper-container {
+      width: 80%;
+    }
+    .screen-area img.screen-img {
+      width: 100%;
+    }
 }
