@@ -18,6 +18,8 @@ import { TabContentComponent } from './sections/what-we-do/tab-content/tab-conte
 import { BenefitCardComponent } from './sections/benefits/benefit-card/benefit-card.component';
 import { NgxNavbarModule } from 'ngx-bootstrap-navbar';
 
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+
 
 @NgModule({
   declarations: [
@@ -37,9 +39,11 @@ import { NgxNavbarModule } from 'ngx-bootstrap-navbar';
     BrowserModule,
     BrowserAnimationsModule,
     MatTabsModule,
+
     NgxNavbarModule,
 
     CarouselModule,
+    NgxUsefulSwiperModule
 
   ],
   providers: [

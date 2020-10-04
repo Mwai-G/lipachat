@@ -19,9 +19,11 @@
 
   &:hover {
       text-decoration: none;
-      background-color: #f15f7f;
+      background-color: #ff002f;
       color: $white_color;
-}
+      -webkit-box-shadow: 2px 4px 40px -10px rgba(0,0,0,0.75);
+      -moz-box-shadow: 2px 4px 40px -10px rgba(0,0,0,0.75);
+      box-shadow: 2px 4px 40px -10px rgba(0,0,0,0.75);}
 
   @media #{$small_mobile} {
     padding: 10px 20px;

@@ -1,6 +1,7 @@
 import { element } from 'protractor';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 import { HostListener } from '@angular/core';
+import { Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -8,6 +9,8 @@ import { HostListener } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+
+  @Output() scrollTo = new EventEmitter<string>();
 
   constructor() { }
 
@@ -22,6 +25,10 @@ export class NavbarComponent implements OnInit {
     } else {
       el.classList.remove('white-nav')
     }
+  }
+
+  scroll(section: string) {
+    this.scrollTo.emit(section);
   }
 
 

@@ -13,19 +13,22 @@
     <ngx-navbar-collapse id="main-nav" #collapse="ngxNavbarCollapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" (click)="scroll('home')">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About us</a>
+          <a class="nav-link" (click)="scroll('about')">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Clients</a>
+          <a class="nav-link" (click)="scroll('benefits')">Benefits</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Demos</a>
+          <a class="nav-link" (click)="scroll('clients')">Clients</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" (click)="scroll('demos')">Demos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scroll('contact')">Contact Us</a>
         </li>
       </ul>
     </ngx-navbar-collapse>

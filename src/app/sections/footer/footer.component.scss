@@ -27,13 +27,12 @@
     img {
       margin-top: 30px;
     }
-
-    h4{
-        color: #fff;
-        font-size: 22px;
-        margin-bottom: 29px;
-        font-weight: 600;
-    }
+      h4{
+          color: #fff;
+          font-size: 22px;
+          margin-bottom: 29px;
+          font-weight: 600;
+      }
       ul{
           li{
               margin-bottom: 15px;
@@ -44,8 +43,8 @@
                   text-decoration: underline transparent;
                   // @include transition(.2s);
                   &:hover{
-                      color: #fff;
-                      text-decoration: underline;
+                    color: $bg_pink;
+                    text-decoration: underline;
                   }
               }
           }
@@ -105,7 +104,8 @@
           a{
               color: $bg_light_blue;
               &:hover{
-                  // color: #A5A7C5;
+                color: $bg_pink;
+                text-decoration: underline;
               }
                
           }
@@ -128,8 +128,8 @@
       margin-right: 8px;
       border: 1px solid $bg_light_blue;
       &:hover{
-          color: #fff;
-          background: #ddd;
+          color: white;
+          background: $bg_pink;
       }
       i{
               display:inline-block;

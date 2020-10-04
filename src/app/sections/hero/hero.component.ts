@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { IGetStartedCard } from '../../interfaces/get-started-card.interface';
 
 @Component({
@@ -8,7 +8,7 @@ import { IGetStartedCard } from '../../interfaces/get-started-card.interface';
 })
 export class HeroComponent implements OnInit {
 
-  constructor() { }
+  @Output() scrollTo = new EventEmitter<string>();
 
   cardsDetails: IGetStartedCard[] = [
     {
@@ -21,13 +21,17 @@ export class HeroComponent implements OnInit {
       imageUrl: 'assets/images/user-icon.jpg',
       heading: 'Lipachat for individuals',
       text: 'Buy airtime, pay bills and convert bonga points to cash on Whatsapp.',
-      link: 'https://api.whatsapp.com/send?phone=254733919333&text=Hi'
     }
   ];
+  constructor() { }
+
 
   ngOnInit(): void {
   }
 
+  scroll() {
+    this.scrollTo.emit('about');
+  }
 
 
 }
