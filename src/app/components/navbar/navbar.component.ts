@@ -1,7 +1,5 @@
-import { element } from 'protractor';
-import { Component, EventEmitter, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { HostListener } from '@angular/core';
-import { Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',

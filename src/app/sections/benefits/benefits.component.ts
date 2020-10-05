@@ -11,22 +11,22 @@ export class BenefitsComponent implements OnInit {
 
   benefits: IBenefit[] = [
     {
-      image: 'assets/images/icons8-money-box-64.png',
+      image: 'assets/images/save-icon.png',
       name: 'Save On Cost',
-      description: 'Using chatbots to is almost 10x cheaper compared to call centers and apps.'
+      description: 'Using chatbots to deal with inquiries is almost 10x cheaper than call centers and costs less than developing a bot.'
     },
     {
-      image: 'assets/images/icons8-account-64.png',
+      image: 'assets/images/grow-icon.png',
       name: 'Growth',
-      description: 'Customers rarely ignore whatsapp messages making it effective for marketing.'
+      description: 'Customers rarely ignore Whatsapp messages making it effective for marketing.'
     },
     {
       image: 'assets/images/intergrate-icon.png',
       name: 'Automated payments',
-      description: 'Integrate to MPESA and bank for payments of goods and services.'
+      description: 'Integrate to MPESA and banks for payments of goods and services.'
     },
     {
-      image: 'assets/images/icons8-online-support-64.png',
+      image: 'assets/images/c-support.png',
       name: 'Better Customer Service',
       description: 'Happier customers 😃.'
     },

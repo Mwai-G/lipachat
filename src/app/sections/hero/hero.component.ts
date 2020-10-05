@@ -15,7 +15,7 @@ export class HeroComponent implements OnInit {
       imageUrl: 'assets/images/business-icon.jpg',
       heading: 'Lipachat for business',
       text: 'Automate your business customer care, sell and market yourself on Whatsapp.',
-      link: 'https://api.whatsapp.com/send?phone=254733919333&text=Hi'
+      link: 'https://api.whatsapp.com/send?phone=254110090747&text=Hi'
     },
     {
       imageUrl: 'assets/images/user-icon.jpg',

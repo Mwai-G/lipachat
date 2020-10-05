@@ -19,7 +19,7 @@
 
   .content {
     top: 0;
-    height: 85vh;
+    height: 70vh;
     width: 100%;
     background: url("../../../assets/images/HeroBackground.jpg") no-repeat top center fixed;
     background-size: cover;
@@ -34,7 +34,7 @@
 
 
     @media screen and (min-width: 1300px) {
-      height: 80vh;
+      height: 75vh;
     }
 
     @media screen and (min-width: 1400px) {
@@ -45,7 +45,7 @@
 
 .get-starteds {
   width: 75%;
-  margin: -170px auto 0;
+  margin: -150px auto 0;
 
   @media screen and (max-width: 768px) {
     width: 100%;

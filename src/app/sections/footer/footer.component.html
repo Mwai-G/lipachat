@@ -1,4 +1,6 @@
 <footer>
+  <div class="triangles-pattern"></div>
+
   <div class="footer-wrappper section-bg" data-background="assets/img/gallery/footer-bg.png">
      <!-- Footer Start-->
      <div class="footer-area footer-padding">
@@ -27,11 +29,11 @@
                          <div class="footer-tittle">
                              <h4>Site Map</h4>
                              <ul>
-                                 <li><a href="#">Home</a></li>
-                                 <li><a href="#">What We Do</a></li>
-                                 <li><a href="#">Benefits</a></li>
-                                 <li><a href="#">Our Clients</a></li>
-                                 <li><a href="#">Demo</a></li>
+                                 <li><a (click)="scroll('home')">Home</a></li>
+                                 <li><a (click)="scroll('about')">What We Do</a></li>
+                                 <li><a (click)="scroll('benefits')">Benefits</a></li>
+                                 <li><a (click)="scroll('clients')">Our Clients</a></li>
+                                 <li><a (click)="scroll('demos')">Demo</a></li>
                              </ul>
                          </div>
                      </div>
@@ -41,14 +43,14 @@
                          <div class="footer-tittle">
                              <h4>Contact Us</h4>
                              <ul>
-                                 <li><a href="#">info@lipachat.com</a></li>
-                                 <li><a href="#">0712 345785</a></li>
+                                 <li><a href="mailto:info@lipachat.com">info@lipachat.com</a></li>
+                                 <li><a href="tel:254110090747">+254 110090747</a></li>
                              </ul>
                          </div>
                          <div class="footer-social">
-                          <a href="#"><i class="fa fa-twitter"></i></a>
-                          <a href="https://bit.ly/sai4ull"><i class="fa fa-facebook-f"></i></a>
-                          <a href="#"><i class="fa fa-instagram"></i></a>
+                          <a href="https://api.whatsapp.com/send?phone=254110090747&text=Hi"><i class="fa fa-whatsapp"></i></a>
+                          <a href="https://www.facebook.com/Lipachat"><i class="fa fa-facebook-f"></i></a>
+                          <a href="https://www.instagram.com/lipachat/"><i class="fa fa-instagram"></i></a>
                       </div>
                      </div>
                  </div>
