@@ -47,5 +47,7 @@ export class AppComponent {
   /** For scroll to section */
   scrollToView(el: HTMLElement) {
     el.scrollIntoView();
-}
+  }
+
+  
 }
