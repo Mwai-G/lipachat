@@ -50,3 +50,11 @@ html{
 /*
  * End Scrollbar Styling
  */
+
+ @media screen and (max-width: 768px) {
+
+  .mat-tab-label {
+    font-size: 14px !important;
+  }
+
+}

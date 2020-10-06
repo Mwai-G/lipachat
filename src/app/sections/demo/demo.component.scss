@@ -3,7 +3,6 @@
 .demo-container {
   background: rgba(0, 0, 0, 0.646);
   background-image: url('../../../assets/images/wa-bg.jpg');
-  background-repeat: repeat-x;
   background-size: cover;
   overflow: hidden;
   z-index: 2;
@@ -114,48 +113,4 @@ iframe {
   bottom: 0;
   margin-bottom: 50px;
   z-index: 10;
-}
-
-@media screen and (max-width: 360px) {
-  iframe {
-    width: 150px !important;
-    margin-left: -5px;
-  }
-  .swiper-container {
-    width: 80%;
-  }
-  .screen-area img.screen-img {
-    width: 100%;
-  }
-}
-
-@media screen 
-and (min-width: 380px)
-and (max-width: 479px)  {
-  iframe {
-    width: 170px !important;
-    margin-left: -5px;
-  }
-  .swiper-container {
-    width: 80%;
-  }
-  .screen-area img.screen-img {
-    width: 100%;
-  }
-}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    iframe {
-      width: 165px !important;
-      margin-left: -3px;
-    }
-    .swiper-container {
-      width: 80%;
-    }
-    .screen-area img.screen-img {
-      width: 100%;
-    }
 }
