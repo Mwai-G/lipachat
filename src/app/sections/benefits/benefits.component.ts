@@ -13,7 +13,7 @@ export class BenefitsComponent implements OnInit {
     {
       image: 'assets/images/save-icon.png',
       name: 'Save On Cost',
-      description: 'Using chatbots to deal with inquiries is almost 10x cheaper than call centers and costs less than developing a bot.'
+      description: 'Using chatbots to deal with inquiries is almost 10x cheaper than call centers and costs less than developing an application.'
     },
     {
       image: 'assets/images/grow-icon.png',
