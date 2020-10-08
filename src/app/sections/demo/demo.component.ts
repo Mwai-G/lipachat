@@ -26,6 +26,9 @@ export class DemoComponent implements OnInit {
         clickable: true,
       },
     });
+
+    let myIframe = document.getElementsByTagName('iframe')[0].contentWindow;
+    console.log(myIframe.document)
   }
 
 }
