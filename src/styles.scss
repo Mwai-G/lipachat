@@ -1,13 +1,20 @@
 
 // Imports
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import '~ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css';
+
 @import '../src/assets/sass/variables';
 @import '../src/assets/sass/extends';
 @import '../src/assets/sass/common';
+@import '../src/assets/sass/patterns';
 @import '../src/assets/sass/button';
 
 
 html{
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden !important;
+
 }
 
 
@@ -43,3 +50,11 @@ html{
 /*
  * End Scrollbar Styling
  */
+
+ @media screen and (max-width: 768px) {
+
+  .mat-tab-label {
+    font-size: 14px !important;
+  }
+
+}

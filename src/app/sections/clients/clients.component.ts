@@ -20,14 +20,23 @@ export class ClientsComponent implements OnInit {
         dynamicBullets: true,
       },
       speed: 800,
-      // spaceBetween: 0,
+      // spaceBetween: 30,
       slidesPerView: 1,
       breakpoints: {
-        768: {
-          slidesPerView: 2,
+        1024: {
+          slidesPerView: 3
+        },
+        500: {
+          slidesPerView: 3
+        },
+        400: {
+          slidesPerView: 2
+        },
+        300: {
+          slidesPerView: 1
         }
       }
-    })
+    });
   }
 
 }

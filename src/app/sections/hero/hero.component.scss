@@ -2,25 +2,26 @@
 
 .hero-section {
   // margin: -80px auto 0;  //compensates for navbar
-  height: 100vh;
+  height: auto;
   @media screen and (max-width: 768px) {
     height: auto;
   }
 
   .bottom-pattern {
     margin-top: -85px;
-    height: 90px;
+    height: 87px;
     width: 100%;
     background-image: url('../../../assets/images/Pattern\ Group.svg');
     background-repeat: repeat-x;
     background-position: bottom;
+    overflow: hidden;
   }
 
   .content {
     top: 0;
-    height: 85vh;
+    height: 70vh;
     width: 100%;
-    background: url("../../../assets/images/HeroBackground.png") no-repeat top center fixed;
+    background: url("../../../assets/images/HeroBackground.jpg") no-repeat top center fixed;
     background-size: cover;
     text-align: center;
     h2 {
@@ -29,11 +30,29 @@
     p {
       color: white;
     }
+
+    .author {
+      text-align: right;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+    }
+
+
+
+    @media screen and (min-width: 1300px) {
+      height: 75vh;
+    }
+
+    @media screen and (min-width: 1400px) {
+      height: 65vh;
+    }
   }
 }
 
 .get-starteds {
-  width: 85%;
+  width: 75%;
   margin: -150px auto 0;
 
   @media screen and (max-width: 768px) {

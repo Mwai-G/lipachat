@@ -1,3 +1,5 @@
+import { EventEmitter } from '@angular/core';
+import { Output } from '@angular/core';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -8,11 +10,15 @@ import { Component, Input, OnInit } from '@angular/core';
 export class GetStartedCardComponent implements OnInit {
 
   @Input() details: any;
+  @Output() scrollTo = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.details)
+  }
+
+  scroll() {
+    this.scrollTo.emit('about');
   }
 
 }

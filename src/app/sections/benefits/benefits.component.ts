@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 import {IBenefit } from 'src/app/interfaces/benefit.interface';
 
 @Component({
@@ -10,26 +11,51 @@ export class BenefitsComponent implements OnInit {
 
   benefits: IBenefit[] = [
     {
-      image: 'assets/images/icons8-money-box-64.png',
+      image: 'assets/images/save-icon.png',
       name: 'Save On Cost',
-      description: 'Quickly handle customer enquiries and get feedback faster at a cheaper cost.'
+      description: 'Using chatbots to deal with inquiries is almost 10x cheaper than call centers and costs less than developing an application.'
     },
     {
-      image: 'assets/images/icons8-account-64.png',
+      image: 'assets/images/grow-icon.png',
       name: 'Growth',
-      description: 'Easily engage with a broader customer audience from a single platform and grow your business.'
+      description: 'Customers rarely ignore Whatsapp messages making it effective for marketing.'
     },
     {
-      image: 'assets/images/icons8-online-support-64.png',
+      image: 'assets/images/intergrate-icon.png',
+      name: 'Automated payments',
+      description: 'Integrate to MPESA and banks for payments of goods and services.'
+    },
+    {
+      image: 'assets/images/c-support.png',
       name: 'Better Customer Service',
-      description: 'Provide your customers with easy payments methods on whatsapp.'
+      description: 'Happier customers 😃.'
     },
-    {
-      image: 'assets/images/icons8-gears-64.png',
-      name: 'Integration',
-      description: 'Easy Intergration  to MPESA, banks and internal erp systems.'
-    }
   ];
+
+
+  customOptions: OwlOptions = {
+    loop: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
+    navSpeed: 700,
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+    nav: false
+  };
 
   constructor() { }
 

@@ -1,13 +1,19 @@
 
 .card {
-  width: 500px;
+  width: 450px;
   border-radius: 15px;
   text-align: center;
-  padding: 25px 15px;
-  margin-bottom: 30px;
+  padding: 15px 10px;
+  margin-bottom: 20px;
 
   .header {
+    h4 {
+      font-size: 20px;
+    }
+
     img {
+      height: 60px;
+      width: auto;
       margin-right: 20px;
     }
   }
@@ -23,4 +29,8 @@
     margin: 0 auto 30px;
   }
   
+}
+
+.btn_1 {
+  color: #fff !important;
 }

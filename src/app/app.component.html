@@ -1,9 +1,8 @@
-<app-navbar></app-navbar>
+<app-navbar  (scrollTo)="scroll($event)"></app-navbar>
 
 <div #Hero>
-  <app-hero></app-hero>
-</div>
-
+  <app-hero (scrollTo)="scroll($event)"></app-hero>
+</div> 
 <div #AboutUs>
   <app-what-we-do></app-what-we-do>
 </div>
@@ -21,5 +20,5 @@
 </div>
 
 <div #Footer>
-  <app-footer></app-footer>
+  <app-footer (scrollTo)="scroll($event)"></app-footer>
 </div>

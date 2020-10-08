@@ -1,7 +1,7 @@
 
 .container-fluid {
 
-  background-color: #F4F6F7;
+  background-color: #F6F8FE;
   border-top: 1px solid #ddd;
   margin: 0;
   width: 100%;
@@ -11,6 +11,11 @@
     text-align: left;
 
     h5 { margin-bottom: 30px }
+
+    @media screen and (max-width: 768px) {
+      margin: 50px 5px 10px;
+
+    }
   }
 
   img {

@@ -12,7 +12,7 @@ export class WhatWeDoComponent implements OnInit {
     {
       headline: 'Sell your products or services on Whatsapp',
       lineOne: 'We develops chatbot solutions through which your businesses can sell products and services.',
-      lineTwo: 'Extend your product and service reach by plug in to Whatsapp’s vast user base.',
+      lineTwo: 'Extend your product and service reach by plugging into Whatsapp’s vast user base.',
       image: 'assets/images/about_img_1.png'
     },
     {
