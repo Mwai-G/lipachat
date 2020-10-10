@@ -150,3 +150,15 @@ iframe {
   margin-bottom: 50px;
   z-index: 10;
 }
+
+
+.iframe-temp-height {
+  height: 500px;
+  &:hover {
+    height: 506px;
+    -webkit-box-shadow: inset 2px -42px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: inset 2px -42px 5px 0px rgba(0,0,0,1);
+    box-shadow: inset 2px -42px 5px 0px rgba(0,0,0,1);
+    transition: 0.5s;
+  }
+}
