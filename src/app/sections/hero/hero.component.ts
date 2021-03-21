@@ -21,6 +21,7 @@ export class HeroComponent implements OnInit {
       imageUrl: 'assets/images/user-icon.jpg',
       heading: 'Lipachat for individuals',
       text: 'Buy airtime, pay bills and convert bonga points to cash on Whatsapp.',
+      link: 'https://api.whatsapp.com/send?phone=254110090747&text=Hi'
     }
   ];
   constructor() { }
