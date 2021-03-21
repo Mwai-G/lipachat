@@ -8,8 +8,6 @@ import { IGetStartedCard } from '../../interfaces/get-started-card.interface';
 })
 export class HeroComponent implements OnInit {
 
-  @Output() scrollTo = new EventEmitter<string>();
-
   cardsDetails: IGetStartedCard[] = [
     {
       imageUrl: 'assets/images/business-icon.jpg',
@@ -26,13 +24,7 @@ export class HeroComponent implements OnInit {
   ];
   constructor() { }
 
-
   ngOnInit(): void {
   }
-
-  scroll() {
-    this.scrollTo.emit('about');
-  }
-
 
 }
