@@ -1,0 +1,100 @@
+.btn_1 {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 7px;
+  background-color: $bg_pink;
+  font-size: 15px;
+  font-family: $font_stack_1;
+  font-weight: 700 !important;
+  color: $white_color;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+
+  &:hover {
+      text-decoration: none;
+      background-color: #ff002f;
+      color: $white_color;
+      -webkit-box-shadow: 2px 4px 40px -10px rgba(0,0,0,0.75);
+      -moz-box-shadow: 2px 4px 40px -10px rgba(0,0,0,0.75);
+      box-shadow: 2px 4px 40px -10px rgba(0,0,0,0.75);}
+
+  @media #{$small_mobile} {
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  @media #{$large_mobile} {
+    padding: 10px 30px;
+    margin-top: 20px;
+  }
+
+  @media #{$tab_device} {
+    padding: 10px 30px;
+    margin-top: 25px;
+  }
+
+  @media #{$medium_device} {}
+}
+
+.section_tittle{
+    margin-bottom: 53px;
+    @media #{$tab}{
+        margin-bottom: 20px;
+    }
+    @media #{$medium_device}{
+        margin-bottom: 40px;
+    }
+    h2{
+        font-size: 45px;
+        color: $heading_color;
+        line-height: 33px;
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 28px;
+        @media #{$small_mobile}{
+            font-size: 25px;
+            line-height: 35px;
+            margin-bottom: 15px;
+           
+        }
+        @media #{$large_mobile}{
+            font-size: 25px;
+            line-height: 35px;
+            margin-bottom: 15px;
+        }
+        @media #{$tab_device}{
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 15px;
+        }
+        @media #{$medium_device}{
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
+    p{
+        color: #556172;
+        text-transform: capitalize;
+        line-height: 30px;
+        font-family: $font_stack_1;
+        @media #{$small_mobile}{
+            margin-bottom: 10px;
+        }
+        @media #{$large_mobile}{
+            margin-bottom: 10px;
+        }
+        @media #{$tab_device}{
+            margin-bottom: 10px;
+        }
+        @media #{$medium_device}{
+            margin-bottom: 10px;
+        }
+    }
+}

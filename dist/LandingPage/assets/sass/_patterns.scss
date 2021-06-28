@@ -1,0 +1,18 @@
+
+  .triangles-pattern {
+    height: 50px;
+    width: 150%;
+    background-image: url("../images/trianglePattern.svg");
+    background-repeat: repeat-x;
+    margin-left: -40px;
+    overflow-x: hidden !important;
+    &.bottom {
+      background-position: bottom;
+      bottom: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 400%;
+
+    }
+  }
